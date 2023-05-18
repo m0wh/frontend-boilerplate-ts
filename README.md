@@ -13,6 +13,8 @@ new () {
   cd -P -- "$1"
   git clone https://github.com/m0wh/frontend-boilerplate-ts.git .
   rm -rf .git
+  nvm use # need nvm
+  yarn # or npm install
   cd ..
   echo "Created new front-end project: type 'cd $1' to enter."
 }
